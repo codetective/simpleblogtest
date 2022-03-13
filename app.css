@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -26,12 +36,13 @@ main {
 }
 .blog-post {
   display: block;
-  flex: 1;
+
   position: relative;
   padding: 40px;
   background: #fff;
   min-width: 250px;
-  max-width: 300px;
+  max-width: 450px;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
   margin: 1rem;
@@ -42,7 +53,7 @@ main {
 
 .post-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   padding-bottom: 20px;
 }
@@ -61,6 +72,7 @@ main {
 .comment {
   padding: 10px 0;
   list-style-type: none;
+  margin-bottom: 5px;
 }
 .commenter-nick {
   font-weight: bold;
@@ -74,6 +86,7 @@ main {
 .comment p {
   font-size: 0.9rem;
   line-height: 1.5;
+  padding-top: 5px;
 }
 
 #single-post {
@@ -103,4 +116,19 @@ main {
 body.stop-scrolling {
   height: 100vh;
   overflow: hidden;
+}
+
+.loadPosts {
+  display: none;
+}
+
+.loadPosts.show {
+  display: block;
+}
+.loadComments {
+  display: none;
+}
+
+.loadComments.show {
+  display: block;
 }
