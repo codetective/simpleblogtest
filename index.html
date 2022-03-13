@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>All Posts</h1>
+    </header>
+    <main>
+      <section id="post-container"></section>
+      <article id="single-post" class="">
+        <header
+          style="
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 40px;
+          "
+        >
+          <h1>Single Post</h1>
+          <h2 id="back" style="cursor: pointer">&leftarrow; Back</h2>
+        </header>
+        <section class="single-box">
+          <div class="post"></div>
+
+          <section class="comments-box">
+            <h3 class="heading">Comments</h3>
+
+            <ul id="comment-list">
+              <li class="comment">
+                <h5 class="commenter-nick">Gung Wah dhhdhdghhgd</h5>
+                <h4 class="commenter-mail">Gung Wah</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's.
+                </p>
+              </li>
+              <li class="comment">
+                <h5 class="commenter-nick">Gung Wah dhhdhdghhgd</h5>
+                <h4 class="commenter-mail">Gung Wah</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's.
+                </p>
+              </li>
+              <li class="comment">
+                <h5 class="commenter-nick">Gung Wah dhhdhdghhgd</h5>
+                <h4 class="commenter-mail">Gung Wah</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
